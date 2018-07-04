@@ -1,0 +1,22 @@
+{
+  "name": "omnifood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files \"*.css, *.html, *.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gurayg/omnifood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gurayg/omnifood/issues"
+  },
+  "homepage": "https://github.com/gurayg/omnifood#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.5"
+  }
+}
