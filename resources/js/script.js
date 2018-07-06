@@ -98,4 +98,21 @@ $(document).ready(function() {
     },
     { offset: "50%" }
   );
+
+  /*mobile navigation*/
+  $(".js--nav-icon").click(function(e) {
+    e.preventDefault();
+
+    var nav = $(".js--main-nav");
+    var iconMenu = $('ion-icon[name="menu"]');
+    var iconClose = $('ion-icon[name="close"]');
+
+    nav.slideToggle(200);
+
+    if (iconMenu.length) {
+      iconMenu.attr("name", "close");
+    } else {
+      iconClose.attr("name", "menu");
+    }
+  });
 });

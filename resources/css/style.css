@@ -286,7 +286,35 @@ header {
 
 .sticky .logo-black {
   display: block;
+  margin-top: 10px;
 }
+
+.sticky .mobile-nav-icon {
+  margin-top: 10px;
+}
+/*mobile navi */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon:link,
+.mobile-nav-icon:visited {
+  border: 0;
+}
+
+ion-icon[name="menu"] {
+  font-size: 200%;
+  color: #fff;
+}
+
+ion-icon[name="close"] {
+  font-size: 200%;
+  color: #fff;
+}
+
 /* -------------------------------- */
 /* FEATURES */
 /* -------------------------------- */
