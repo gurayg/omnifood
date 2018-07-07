@@ -115,4 +115,25 @@ $(document).ready(function() {
       iconClose.attr("name", "menu");
     }
   });
+
+  /* google maps */
+  //   new GMaps({
+  //     div: "#map",
+  //     lat: -12.043333,
+  //     lng: -77.028333
+  //   });
 });
+
+function initMap() {
+  var myLatLng = { lat: 46.0662151, lng: 14.4620596 };
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 5,
+    center: { lat: myLatLng.lat, lng: myLatLng.lng + 15 }
+  });
+
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: "Hello World!"
+  });
+}
